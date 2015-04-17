@@ -1,0 +1,148 @@
+.haet-crd-loading{
+  display: inline-block;
+  margin-bottom:20px;
+  width:12px;
+  height:12px;
+  background:#00b39f;
+  border-radius:50%;
+  animation:haet-crd-loading-ani1 3s ease-in-out infinite;
+  position: relative;
+  float: left;
+  margin:4px 20px 2px 10px;
+}
+.haet-crd-loading i{
+  content:'';
+  width:12px;
+  height:6px;
+  background:#ffb364;
+  border-radius:0 0 6px 6px;
+  position:absolute;
+  bottom: 0;
+  transform-origin:left top;
+}
+.haet-crd-loading i:nth-child(3){
+  animation:haet-crd-loading-ani2 3s ease-in-out infinite;
+}
+.haet-crd-loading i:nth-child(2){
+  background:#00b39f;
+  animation:haet-crd-loading-ani3 3s ease-in-out infinite;
+}
+
+@keyframes haet-crd-loading-ani1{
+  80%{
+    transform:rotate(0deg);
+}
+25%{
+    transform:rotate(-110deg);
+}
+30%,50%{
+    transform:rotate(-90deg);
+}
+75%{
+    transform:rotate(20deg);
+}
+}
+
+@keyframes haet-crd-loading-ani2{
+  30%{
+    transform:rotateX(0deg);
+    z-index: 1;
+}
+50%,100%{
+    transform:rotateX(-180deg);
+    z-index: 2;
+}
+}
+@keyframes haet-crd-loading-ani3{
+  80%{
+    z-index: 1;
+    transform:rotateX(0deg);
+}
+100%{
+    z-index: 3;
+    transform:rotateX(180deg);
+}
+}
+
+.haet-crd-status-bar {
+    background: #222;
+    color:#ccc;
+    height:20px;
+}
+
+.haet-crd-widget-settings .haet-crd-status-bar {
+  display: none;
+}
+
+.haet-crd-status-bar .error{
+    color:red;
+}
+
+.haet-crd-pie-charts{
+    zoom: 1;
+}
+.haet-crd-pie-charts:before, 
+.haet-crd-pie-charts:after { 
+    content: ""; display: table; 
+}
+.haet-crd-pie-charts:after { 
+    clear: both; 
+}
+
+.haet-crd-current-pie{
+    width: 60%;
+    float: right;
+    margin-left: 5%;
+    margin-bottom: 30px;
+}
+
+.haet-crd-current-pie .date{
+    text-align: right;
+    margin: 15px 0;
+}
+.haet-crd-old-pie{
+    width: 35%;
+    float: left;
+    background: #ccc;
+}
+
+.haet-crd-old-pie .canvas-wrap{
+    width:80%;
+    margin:5% 13%;
+}
+
+.haet-crd-old-pie .chart-title{
+    width:80%;
+    margin:2% 13% 0 13%;
+}
+
+.haet-crd-old-pie .date{
+    width:80%;
+    margin:0% 13%;
+    text-align: right;
+}
+
+.haet-crd-line-chart{
+    margin-bottom: 30px;
+}
+
+.haet-crd-links table{
+    width:100%;
+    border-collapse: collapse;
+}
+
+.haet-crd-links th{
+    background: #ccc;
+}
+
+.haet-crd-links .even{
+    background: #e3e3e3;
+}
+
+.haet-crd-links .link-name{
+    text-align: left;
+}
+
+.haet-crd-links .link-clicks{
+    text-align: right;
+}
