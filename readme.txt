@@ -14,7 +14,7 @@ Connect your WordPress Dashboard to your [CleverReach Newsletter](http://www.cle
 
 This plugins shows latest statistics from your campaigns as dashboard widget.
 
-See screenshots for more details.
+See [screenshots](https://wordpress.org/plugins/cleverreach-newsletter-dashboard-widget/screenshots/) for more details.
 
 [More information](http://etzelstorfer.com/cleverreach-wordpress-dashboard-widget/) avalaible in German
 
